@@ -1,0 +1,10 @@
+.Container main{
+    color: #7851A9;
+}
+.Container Card img{
+    height: '500px';
+    align-items: center;
+}
+.Container Row{
+    padding: '3rem';
+}

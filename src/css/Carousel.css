@@ -1,0 +1,25 @@
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+     /* Adjust the width as needed */
+    margin: 0 auto;
+    
+  }
+  
+  .carousel-slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
+  
+  .container{
+    width: flex;
+    height: 100;
+
+  }
+  

@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.Container {
+    margin: 1rem;
+    color: #7851a9;
+}
+
+.nav {
+    background-color: transparent;
+    color: #7851a9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.site-title{
+    font-size: 2rem;
+}
+.site-title img{
+    height: 12rem;
+}
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+.nav li.active{
+    background-color: #555;
+}
+.nav li:hover{
+    background-color: #CFB53B;
+}
