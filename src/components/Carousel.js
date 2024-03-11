@@ -14,13 +14,14 @@ import pic11 from '../assets/HomescreenGal/galPhoto10.JPG'
 import pic12 from '../assets/HomescreenGal/galPhoto11.JPG'
 import pic13 from '../assets/HomescreenGal/galPhoto12.JPG'
 import '../css/Carousel.css';
-const imagesUrls = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13 ]
 
 function Carousels() {
   return (
-    <Carousel>
+    <Carousel style={{ height: '500px', display: 'flex', flexDirection: 'column',
+    justifyContent: 'space-around', alignItems: 'center', height: '600px',
+    textAlign: 'center' }}>
       <Carousel.Item>
-      <Image src={pic1} alt="Iota Omega Chapter" fluid />
+      <Image src={pic1} alt="Iota Omega Chapter"  stretch/>
         <Carousel.Caption>
           <h3>Welcome to Iota Omega Chapter</h3>
           <h4>Of Omega Psi Phi Inc.</h4>
@@ -34,7 +35,7 @@ function Carousels() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <Image src={pic3} alt='Welcome to Iota Omega' fluid />
+      <Image src={pic3} alt='Welcome to Iota Omega' stretch/>
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>

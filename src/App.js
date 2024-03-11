@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import ContactUs from './pages/ContactUs'
 import { Route, Routes} from 'react-router-dom'
 import Footer from './components/Footer'
+import IQMemberHistory from './pages/IQChapterList'
 
 function App() {
   return(
@@ -19,6 +20,7 @@ function App() {
           <Route path='/historyoppf' element={<HistoryOfOppf/>} />
           <Route path='/iqhistory' element={<IQHistory/>} />
           <Route path='/contactus' element={<ContactUs/>} />
+          <Route path='/chapterlinelist' element={<IQMemberHistory/>} />
         </Routes>
       </div>
       <Footer/>

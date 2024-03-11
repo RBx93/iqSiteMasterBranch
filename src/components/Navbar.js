@@ -1,27 +1,42 @@
-import React from 'react'
-import '../css/Navbar.css'
-import logoImage from '../assets/logo.png'
-import { Link } from 'react-router-dom'
-import { Col, Container, Row } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
+import logoImage from '../assets/logo.png';
 
-export default function Navbar() {
-  return <nav className='nav'>
-    <Container fluid>
-    <Row>
-      <Col sm={4}>
-        <Link to='/' className="site-title">
-            <img src={logoImage} alt="Iota Omega Chapter of Omega Psi Phi" />
-        </Link>
-      </Col>
-      <Col className='sticky=top' >
-        <ul >
-            <li><Link to='/ourprograms'>Our Programs</Link></li>
-            <li><Link to='/historyoppf'>History of Omega</Link></li>
-            <li><Link to='/iqhistory'>IQ History</Link></li>
-            <li><Link to='/contactus'>Contact Us</Link></li>
-        </ul>
-      </Col>
-    </Row>
-    </Container>
-  </nav>
+function BasicNavigation() {
+  return (
+    <Navbar expand="lg"  bg="transparent" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">
+          <Link to='/' className="site-title">
+            <img src={logoImage} alt="Iota Omega Chapter of Omega Psi Phi" style={{ width: '225px', height: '200px' }}/>
+        </Link></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <NavDropdown title="Our Programs" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/ourprograms">Mandated Programs</NavDropdown.Item>
+              <NavDropdown.Item href="/iqcalendar">Upcoming IQ Events</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="History" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/historyoppf">History of Omega</NavDropdown.Item>
+              <NavDropdown.Item href="/iqhistory">IQ History</NavDropdown.Item>
+              <NavDropdown.Item href="/chapterlinelist">IQ Chapter Line List</NavDropdown.Item>
+              <NavDropdown.Item href="/chapterArchives">IQ Chapter Archives</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="oppf.org">
+                Visit OPPF Site
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/contactus">Contact Us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
+
+export default BasicNavigation;
