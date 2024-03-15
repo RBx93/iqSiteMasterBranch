@@ -4,14 +4,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import logoImage from '../assets/logo.png';
+import '../css/Navbar.css';
 
 function BasicNavigation() {
   return (
-    <Navbar expand="lg"  bg="transparent" className="bg-body-tertiary">
+    <Navbar>
       <Container>
         <Navbar.Brand href="#home">
           <Link to='/' className="site-title">
-            <img src={logoImage} alt="Iota Omega Chapter of Omega Psi Phi" style={{ width: '225px', height: '200px' }}/>
+            <img src={logoImage} alt="Iota Omega Chapter of Omega Psi Phi" style={{ width: '300px', height: '200px' }}/>
         </Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

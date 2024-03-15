@@ -41,7 +41,7 @@ const Footer = () => {
                     <Row>
                         <Col style={{textAlign: 'center'}}>
                         <p>
-                            @{new Date().getFullYear()} Elevated Technology Solutions. 
+                            @{new Date().getFullYear()} Iota Omega Chapter of Omega Psi Phi Inc. 
                             <br/>
                             All right reserved
                         </p>

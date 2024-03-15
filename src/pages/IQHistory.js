@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Container, Row } from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 const IQHistory = () => {
   return (
@@ -170,8 +171,11 @@ const IQHistory = () => {
         <p>Source: The History of Omega Psi Phi Fraternity: A Brotherhood of Negro College Men, 1911 to 1939</p>
       </Row> 
       <Row style={{padding: '1rem'}}>
-        <Button style={{backgroundColor:'#7851A9', borderColor:'#CFB53B', width: '10rem', color: '#CFB53B'}}>IQ Chapter List</Button>
+        <Link to="/chapterlinelist">
+          <Button style={{backgroundColor:'#7851A9', borderColor:'#CFB53B', width: '10rem', color: '#CFB53B'}}>IQ Chapter List</Button>
+        </Link>
       </Row>
+      
     </Container>
   )
 }
