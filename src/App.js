@@ -14,7 +14,6 @@ import ChapterArchives from './pages/ChapterArchives'
 function App() {
   return(
     <>
-      <div className='container'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -26,7 +25,6 @@ function App() {
         <Route path='/iqcalendar' element={<IQcalendar />} />
         <Route path='/chapterArchives' element={<ChapterArchives />} />
       </Routes>
-    </div>
     <Footer />
   </>
 
