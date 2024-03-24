@@ -28,7 +28,7 @@ function BasicNavigation() {
               <NavDropdown.Item href="/chapterlinelist">IQ Chapter Line List</NavDropdown.Item>
               <NavDropdown.Item href="/chapterArchives">IQ Chapter Archives</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="oppf.org">
+              <NavDropdown.Item href="https://www.oppf.org" target="_blank" rel="noopener noreferrer">
                 Visit OPPF Site
               </NavDropdown.Item>
             </NavDropdown>

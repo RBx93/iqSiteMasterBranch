@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Just from '../assets/Founders/founder-just.jpg'
 import Coleman from '../assets/Founders/founder-coleman.jpg'
@@ -6,6 +6,9 @@ import Cooper from '../assets/Founders/founder-cooper.jpg'
 import Love from '../assets/Founders/founder-love-.jpg'
 
 const HistoryOfOppf = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
         <Container>
         <Row>

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Button, Container, Row } from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 const IQHistory = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Container>
         <Row>

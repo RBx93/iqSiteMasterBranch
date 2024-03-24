@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
@@ -18,6 +18,9 @@ import '../css/Ourprograms.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function OurPrograms() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const cardData = [
     // Create an array with data for 10 cards
     {

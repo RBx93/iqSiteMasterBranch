@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import CharlesDrew from '../assets/Events/2024/bloodDrive/bloodDrive.jpg' 
 import MyCalendar from '../components/Calendar'
 
 const IQcalendar = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
         <Container>
         <Row>
@@ -20,7 +23,7 @@ const IQcalendar = () => {
             <img src= {CharlesDrew} class="img-fluid" alt="DR. ERNEST E. JUST" style={{height: 400}}/>
           </Col>
           <Col className='col-sm-8'>
-            <h2 style={{textAlign: 'center'}}>Dr. CharlesDrew Blood Drive </h2>
+            <h2 style={{textAlign: 'center'}}>Dr. Charles Drew Blood Drive </h2>
             <br/>
             <p style={{textAlign: 'center'}}>Join Us At the Tuskegee Municipal Complex Auditorium</p>
             <p style={{textAlign: 'center'}}>On: Saturday, March 23, 2024</p>
@@ -31,7 +34,7 @@ const IQcalendar = () => {
             <p style={{color:'#4CBB17'}}>PRO TIPS: Please Make sure to eat iron-rich foods and HYDRATE!!</p>
           </Col>
         </Row>
-        </Container>
+      </Container>
   )
 }
 

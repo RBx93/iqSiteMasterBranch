@@ -9,10 +9,12 @@ import { Route, Routes} from 'react-router-dom'
 import Footer from './components/Footer'
 import IQMemberHistory from './pages/IQChapterList'
 import IQcalendar from './pages/IQCalendar'
+import ChapterArchives from './pages/ChapterArchives'
 
 function App() {
   return(
-      <><div className='container'>
+    <>
+      <div className='container'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -22,8 +24,11 @@ function App() {
         <Route path='/contactus' element={<ContactUs />} />
         <Route path='/chapterlinelist' element={<IQMemberHistory />} />
         <Route path='/iqcalendar' element={<IQcalendar />} />
+        <Route path='/chapterArchives' element={<ChapterArchives />} />
       </Routes>
-    </div><Footer /></>
+    </div>
+    <Footer />
+  </>
 
   )
 }

@@ -1,13 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Button, Container, Row, Col } from 'react-bootstrap'
 
 const IQMemberHistory = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Container className="text-center my-4">
         <Row>
           <Col>
             <h1 style={{textDecoration:'underline', color: '#7851A9'}}>Iota Omega Chapter Line List</h1>
-            <h5>Members Initiated into Iota Omega 1923 - Present</h5>
+            <h5>Members Initiated into Iota Omega From 1923 - Present</h5>
           </Col>
         </Row>
         <Row>

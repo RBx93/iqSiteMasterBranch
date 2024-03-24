@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Carousel from '../components/Carousel'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
@@ -7,6 +7,9 @@ import Divider from '@mui/material/Divider'
 import MyCalendar from '../components/Calendar'
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Container>
       <Row><Carousel fluid /></Row>

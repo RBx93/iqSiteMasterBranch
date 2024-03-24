@@ -27,14 +27,16 @@ const Footer = () => {
                         </Col>
             
                         <Col style={{alignContent: 'center'}}>
-                            <img src={logoImage} style={{height:'13rem'}} alt="Iota Omega Chapter of Omega Psi Phi" />
+                            <Link to='/' className="site-title">
+                                <img src={logoImage} style={{height:'13rem'}} alt="Iota Omega Chapter of Omega Psi Phi" />
+                            </Link>
                         </Col>
                         <Col>
                             <ul style={{listStyle: 'none', fontSize: '1rem'}}>
-                                <li><Link to='#'>Chapter Line List</Link></li>
-                                <li><Link to='www.oppf.org'>OPPF.org</Link></li>
-                                <li><Link to='#'>Find A Chapter</Link></li>
-                                <li><Link to='#'>How To Join</Link></li>
+                                <li><Link to='/chapterlinelist'>Chapter Line List</Link></li>
+                                <li><a href="http://www.oppf.org" target="_blank" rel="noopener noreferrer">OPPF.org</a></li>
+                                <li><a href="https://members.oppf.org/OPPMembers/ChapterSearch/ChapterSearch.aspx" target="_blank" rel="noopener noreferrer">Find A Chapter</a></li>
+                                <li><a href="https://oppf.org/interested-in-omega-psi-phi-fraternity/" target="_blank" rel="noopener noreferrer">How To Join</a></li>
                             </ul>
                         </Col>
                     </Row>
