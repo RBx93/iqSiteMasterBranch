@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/ourprograms' element={<Ourprograms />} />
+        <Route path='/ourprograms/mandatedprograms' element={<Ourprograms />} />
         <Route path='/historyoppf' element={<HistoryOfOppf />} />
         <Route path='/iqhistory' element={<IQHistory />} />
         <Route path='/contactus' element={<ContactUs />} />

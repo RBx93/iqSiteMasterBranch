@@ -20,17 +20,14 @@ function Carousels() {
       <Carousel.Item>
       <Image src={pic2} alt='Welcome to Iota Omega'  style={{ height: '500px'}}/>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Service</h3>
+          <p></p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
       <Image src={pic3} alt='Welcome to Iota Omega' style={{ height: '500px'}}/>
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Scholarship</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
