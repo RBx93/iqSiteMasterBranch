@@ -2,9 +2,19 @@
     box-sizing: border-box;
 }
 
+.navbar-with-banner {
+    background-image: url('../assets/banner.jpg'); /* Banner image as the background */
+    background-size: cover; /* Cover the entire navbar */
+    background-position: center; /* Center the background image */
+    height: 200px; /* Set the height of the navbar */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+
 .Container {
     margin: 1rem;
-    color: #7851a9;
+    color: #fff;
 }
 
 .nav {
@@ -13,7 +23,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .site-title{
@@ -22,13 +31,7 @@
 .site-title img{
     height: 12rem;
 }
-.nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
+
 .nav a {
     color: inherit;
     text-decoration: none;
@@ -36,11 +39,15 @@
     display:flex;
     align-items: center;
     padding: .25rem;
+    color: #fff;
 }
 
 .nav li.active{
     background-color: #555;
 }
-.nav li:hover{
+.NavDropdown:hover{
     background-color: #CFB53B;
 }
+
+
+  

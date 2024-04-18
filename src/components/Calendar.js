@@ -6,7 +6,7 @@ function MyCalendar() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh' }}>
       <div style={{ maxWidth: '500px', textAlign: 'center' }}>
-        <h1 style={{ color: '#7851A9' }}>Event Calendar</h1>
+        <h1 style={{ color: '#7851A9' }}>IQ Event Calendar</h1>
         <div style={{ backgroundColor: '#F0F0F0', padding: '20px', borderRadius: '8px' }}>
           <Calendar
             calendarType="US"

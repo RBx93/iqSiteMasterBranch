@@ -10,12 +10,8 @@ const IQcalendar = () => {
   return (
         <Container>
         <Row>
-          <h1 className="text-center my-4" style={{textDecoration:'underline', color: '#7851A9'}}>IQ Calendar</h1>
-        <Row>
-        <MyCalendar/>
+          <MyCalendar/>
         <br/>
-        
-      </Row>
         </Row>
 
         <Row xs={1} sm={1} fluid style={{backgroundColor: '#7851A9', color: 'white', padding: '1rem'}}>
